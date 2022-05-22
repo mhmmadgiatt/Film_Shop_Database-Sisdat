@@ -1,1 +1,17 @@
-# Film_Shop_Database-Sisdat
+<p align="center">
+  <h2 align="center">
+     Project UAS Sistem Database I 
+     Film Shop Database
+  </h2>
+</p>
+
+
+<!-- Anggota kelompok -->
+## Anggota Kelompok
+| NPM           | Name                   |
+| ------------- |------------------------|
+| 140810210003  | Muhammad Ikhsan        |
+| 140810210013  | Muhammad Giat          |
+| 140810210029  | Rifqi Muhadzib Ahdan   |
+
+
