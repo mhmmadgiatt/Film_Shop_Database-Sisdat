@@ -3,7 +3,7 @@
      Project UAS Sistem Database I 
 <p align="center">
   <h2 align="center">
-     Film Shop Database
+     Novel Shop Database
   </h2>
 </p>
 
