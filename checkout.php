@@ -85,14 +85,14 @@ if(isset($_POST['order_btn'])){
             $total_price = ($fetch_cart['harga'] * $fetch_cart['jumlah']);
             $grand_total += $total_price;
    ?>
-   <p> <?php echo $fetch_cart['nama']; ?> <span>(<?php echo '$'.$fetch_cart['harga'].'/-'.' x '. $fetch_cart['jumlah']; ?>)</span> </p>
+   <p> <?php echo $fetch_cart['nama']; ?> <span>(<?php echo 'Rp.'.$fetch_cart['harga'].' x '. $fetch_cart['jumlah']; ?>)</span> </p>
    <?php
       }
    }else{
       echo '<p class="empty">keranjang kamu kosong</p>';
    }
    ?>
-   <div class="grand-total"> grand total : <span>$<?php echo $grand_total; ?>/-</span> </div>
+   <div class="grand-total"> grand total : <span>Rp.<?php echo $grand_total; ?></span> </div>
 
 </section>
 

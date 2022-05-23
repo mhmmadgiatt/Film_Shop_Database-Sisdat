@@ -69,13 +69,13 @@ if(isset($_GET['delete_all'])){
          <a href="cart.php?delete=<?php echo $fetch_cart['id']; ?>" class="fas fa-times" onclick="return confirm('delete this from keranjang?');"></a>
          <img src="uploaded_img/<?php echo $fetch_cart['gambar']; ?>" alt="">
          <div class="name"><?php echo $fetch_cart['nama']; ?></div>
-         <div class="price">$<?php echo $fetch_cart['harga']; ?>/-</div>
+         <div class="price">Rp.<?php echo $fetch_cart['harga']; ?></div>
          <form action="" method="post">
             <input type="hidden" name="keranjang_id" value="<?php echo $fetch_cart['id']; ?>">
             <input type="number" min="1" name="keranjang_jumlah" value="<?php echo $fetch_cart['jumlah']; ?>">
             <input type="submit" name="update_keranjang" value="update" class="option-btn">
          </form>
-         <div class="sub-total"> sub total : <span>$<?php echo $sub_total = ($fetch_cart['jumlah'] * $fetch_cart['harga']); ?>/-</span> </div>
+         <div class="sub-total"> sub total : <span>Rp.<?php echo $sub_total = ($fetch_cart['jumlah'] * $fetch_cart['harga']); ?></span> </div>
       </div>
       <?php
       $grand_total += $sub_total;
@@ -91,7 +91,7 @@ if(isset($_GET['delete_all'])){
    </div>
 
    <div class="cart-total">
-      <p>Hasil Akhir : <span>Rp.<?php echo $grand_total; ?>/-</span></p>
+      <p>Hasil Akhir : <span>Rp.<?php echo $grand_total; ?></span></p>
       <div class="flex">
          <a href="home.php" class="option-btn">Tambah novel lain</a>
          <a href="checkout.php" class="btn <?php echo ($grand_total > 1)?'':'disabled'; ?>">Proses untuk checkout</a>

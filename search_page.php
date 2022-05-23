@@ -17,7 +17,7 @@ if(isset($_POST['add_to_cart'])){
    $novel_gambar = $_POST['novel_gambar'];
    $novel_jumlah = $_POST['novel_jumlah'];
 
-   $check_cart_numbers = mysqli_query($conn, "SELECT * FROM `keranjang` WHERE name = '$novel_nama' AND user_id = '$user_id'") or die('query failed');
+   $check_cart_numbers = mysqli_query($conn, "SELECT * FROM `keranjang` WHERE nama = '$novel_nama' AND user_id = '$user_id'") or die('query failed');
 
    if(mysqli_num_rows($check_cart_numbers) > 0){
       $message[] = 'Sudah ditambahkan ke keranjang!';
@@ -73,7 +73,7 @@ if(isset($_POST['add_to_cart'])){
    ?>
    <form action="" method="post" class="box">
       <img src="uploaded_img/<?php echo $fetch_product['gambar']; ?>" alt="" class="image">
-      <div class="name"><?php echo $fetch_product['judul']; ?></div>
+      <div class="name"><?php echo $fetch_product['nama']; ?></div>
       <div class="price">$<?php echo $fetch_product['harga']; ?>/-</div>
       <input type="number"  class="qty" name="novel_jumlah" min="1" value="1">
       <input type="hidden" name="novel_nama" value="<?php echo $fetch_product['nama']; ?>">

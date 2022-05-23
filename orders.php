@@ -55,7 +55,7 @@ if(!isset($user_id)){
          <p> Alamat : <span><?php echo $fetch_orders['alamat']; ?></span> </p>
          <p> metode pembayaran : <span><?php echo $fetch_orders['metode']; ?></span> </p>
          <p> orderan kamu : <span><?php echo $fetch_orders['total_novel']; ?></span> </p>
-         <p> total harga : <span>$<?php echo $fetch_orders['total_harga']; ?>/-</span> </p>
+         <p> total harga : <span>Rp.<?php echo $fetch_orders['total_harga']; ?></span> </p>
          <p> status pembayaran : <span style="color:<?php if($fetch_orders['status_pembayaran'] == 'belum bayar'){ echo 'red'; }else{ echo 'green'; } ?>;"><?php echo $fetch_orders['status_pembayaran']; ?></span> </p>
          </div>
       <?php

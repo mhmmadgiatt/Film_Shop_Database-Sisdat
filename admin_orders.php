@@ -64,7 +64,7 @@ if(isset($_GET['delete'])){
          <p> email : <span><?php echo $fetch_orders['email']; ?></span> </p>
          <p> alamat : <span><?php echo $fetch_orders['alamat']; ?></span> </p>
          <p> total novel : <span><?php echo $fetch_orders['total_novel']; ?></span> </p>
-         <p> total harga : <span>$<?php echo $fetch_orders['total_harga']; ?>/-</span> </p>
+         <p> total harga : <span>Rp.<?php echo $fetch_orders['total_harga']; ?></span> </p>
          <p> metode pembayaran : <span><?php echo $fetch_orders['metode']; ?></span> </p>
          <form action="" method="post">
             <input type="hidden" name="order_id" value="<?php echo $fetch_orders['id']; ?>">

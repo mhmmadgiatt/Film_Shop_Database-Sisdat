@@ -72,7 +72,7 @@ if(isset($_POST['add_to_cart'])){
      <form action="" method="post" class="box">
       <img class="image" src="uploaded_img/<?php echo $fetch_novel['gambar']; ?>" alt="">
       <div class="name"><?php echo $fetch_novel['nama']; ?></div>
-      <div class="price">$<?php echo $fetch_novel['harga']; ?>/-</div>
+      <div class="price">Rp.<?php echo $fetch_novel['harga']; ?></div>
       <input type="number" min="1" name="novel_jumlah" value="1" class="qty">
       <input type="hidden" name="novel_nama" value="<?php echo $fetch_novel['nama']; ?>">
       <input type="hidden" name="novel_harga" value="<?php echo $fetch_novel['harga']; ?>">

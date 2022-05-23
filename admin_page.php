@@ -35,7 +35,7 @@ if(!isset($admin_id)){
 
 <section class="dashboard">
 
-   <h1 class="title">dashboard</h1>
+   <h1 class="title">dashboard admin</h1>
 
    <div class="box-container">
 
@@ -50,7 +50,7 @@ if(!isset($admin_id)){
                };
             };
          ?>
-         <h3>$<?php echo $total_pendings; ?>/-</h3>
+         <h3>Rp.<?php echo $total_pendings; ?></h3>
          <p>Belum Bayar</p>
       </div>
 
@@ -65,7 +65,7 @@ if(!isset($admin_id)){
                };
             };
          ?>
-         <h3>$<?php echo $total_completed; ?>/-</h3>
+         <h3>Rp.<?php echo $total_completed; ?></h3>
          <p>lunas</p>
       </div>
 

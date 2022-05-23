@@ -104,7 +104,7 @@ if(isset($_POST['update_product'])){
    <h1 class="title">shop novels</h1>
 
    <form action="" method="post" enctype="multipart/form-data">
-      <h3>add novel</h3>
+      <h3>tambah novel</h3>
       <input type="text" name="nama" class="box" placeholder="Masukkan nama novel" required>
       <input type="number" min="0" name="harga" class="box" placeholder="Masukkan harga novel" required>
       <input type="file" name="gambar" accept="image/jpg, image/jpeg, image/png" class="box" required>
@@ -129,7 +129,7 @@ if(isset($_POST['update_product'])){
       <div class="box">
          <img src="uploaded_img/<?php echo $fetch_novel['gambar']; ?>" alt="">
          <div class="name"><?php echo $fetch_novel['nama']; ?></div>
-         <div class="price">$<?php echo $fetch_novel['harga']; ?>/-</div>
+         <div class="price">Rp.<?php echo $fetch_novel['harga']; ?></div>
          <a href="admin_products.php?update=<?php echo $fetch_novel['id']; ?>" class="option-btn">update</a>
          <a href="admin_products.php?delete=<?php echo $fetch_novel['id']; ?>" class="delete-btn" onclick="return confirm('Hapus novel ini ?');">hapus</a>
       </div>
